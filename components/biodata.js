@@ -3,81 +3,90 @@ const buildBiodata = data =>
     <div class="section">
     <div class="row col-5">
         <p class="data">
-            <b>FIRST NAME</b><br>
-            ${data.firstName ?? "N/A"}
+           <span class="fieldName">FIRST NAME</span><br>
+            <span class="fieldValue"> ${data.firstName ?? "N/A"}  </span>
         </p>
         <p class="data">
-            <b>LAST NAME</b><br>
-            ${data.surname ?? "N/A"}
+           <span class="fieldName">LAST NAME</span><br>
+            <span class="fieldValue"> ${data.surname ?? "N/A"}  </span>
         </p>
         <p class="data">
-            <b>OTHER NAMES</b><br>
-            ${data.otherNames ?? "N/A"}
+           <span class="fieldName">OTHER NAMES</span><br>
+            <span class="fieldValue"> ${data.otherNames ?? "N/A"}  </span>
         </p>
         <p class="data">
-            <b>HEIGHT (ft)</b><br>
-            ${data.height ?? "N/A"}
+           <span class="fieldName">HEIGHT (cm)</span><br>
+            <span class="fieldValue"> ${data.height ?? "N/A"}  </span>
         </p>
         <p class="data">
-            <b>WEIGHT (Kg)</b><br>
-            ${data.weight ?? "N/A"}
+           <span class="fieldName">WEIGHT (Kg)</span><br>
+            <span class="fieldValue"> ${data.weight ?? "N/A"}  </span>
         </p>
     </div>
     <div class="separator"></div>
     <div class="row col-5">
         <p class="data">
-            <b>DATE OF BIRTH</b><br>
-            ${data.dob ?? "N/A"}
+           <span class="fieldName">DATE OF BIRTH</span><br>
+            <span class="fieldValue"> ${data.dob ?? "N/A"}  </span>
         </p>
         <p class="data">
-            <b>PLACE OF BIRTH</b><br>
-            ${data.placeOfBirth ?? "N/A"}
+           <span class="fieldName">PLACE OF BIRTH</span><br>
+            <span class="fieldValue"> ${data.placeOfBirth ?? "N/A"}  </span>
         </p>
         <p class="data">
-            <b>REGION</b><br>
-            ${data.homeRegion ?? "N/A"}
+           <span class="fieldName">REGION</span><br>
+            <span class="fieldValue"> ${data.homeRegion ?? "N/A"}  </span>
         </p>
         <p class="data">
-            <b>DISTRICT</b><br>
-            ${data.homeDistrict ?? "N/A"}
+           <span class="fieldName">DISTRICT</span><br>
+            <span class="fieldValue"> ${data.homeDistrict ?? "N/A"}  </span>
         </p>
         <p class="data">
-            <b>HOMETOWN</b><br>
-            ${data.applicantsHomeTown ?? "N/A"}
+           <span class="fieldName">HOMETOWN</span><br>
+            <span class="fieldValue"> ${
+              data.applicantsHomeTown ?? "N/A"
+            }  </span>
         </p>
     </div>
     <div class="separator"></div>
-    <div class="row col-4">
+    <div class="row">
+            <p class="data">
+           <span class="fieldName">GENDER</span><br>
+            <span class="fieldValue"> ${data.gender ?? "N/A"}  </span>
+            </p>
+            <p class="data">
+               <span class="fieldName">MARITAL STATUS</span><br>
+                <span class="fieldValue"> ${
+                  data.maritalStatus ?? "N/A"
+                }  </span>
+            </p>
+        
         <p class="data">
-            <b>GENDER</b><br>
-            ${data.gender ?? "N/A"}
+           <span class="fieldName">BIRTH CERT NO.</span><br>
+            <span class="fieldValue"> ${
+              data.birthCerticateNumber ?? "N/A"
+            }  </span>
         </p>
         <p class="data">
-            <b>MARITAL STATUS</b><br>
-            ${data.maritalStatus ?? "N/A"}
-        </p>
-        <p class="data">
-            <b>BIRTH CERT NO.</b><br>
-            ${data.birthCerticateNumber ?? "N/A"}
-        </p>
-        <p class="data">
-            <b>EMAIL</b><br>
-            ${data.emailAddress ?? "N/A"}
+           <span class="fieldName">EMAIL</span><br>
+            <span class="fieldValue"> ${data.emailAddress ?? "N/A"}  </span>
         </p>
     </div>
     <div class="separator"></div>
     <div class="row">
         <p class="data">
-            <b>DIGITAL ADDRESS</b><br>
-            ${data.ghanaPost ?? "N/A"}
+           <span class="fieldName">DIGITAL ADDRESS</span><br>
+            <span class="fieldValue"> ${data.ghanaPost ?? "N/A"}  </span>
         </p>
         <p class="data">
-            <b>RESIDENTIAL ADDRESS</b><br>
-            ${data.residentialAddress ?? "N/A"}
+           <span class="fieldName">RESIDENTIAL ADDRESS</span><br>
+            <span class="fieldValue"> ${
+              data.residentialAddress ?? "N/A"
+            }  </span>
         </p>
         <p class="data">
-            <b>SCREENING REGION</b><br>
-            ${data.screenRegion ?? "N/A"}
+           <span class="fieldName">SCREENING REGION</span><br>
+            <span class="fieldValue"> ${data.screenRegion ?? "N/A"}  </span>
         </p>
     </div>
 </div>

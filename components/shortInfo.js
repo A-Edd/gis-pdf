@@ -2,32 +2,44 @@ const buildShortInfo = data => `
 <div class="section">
                 <div class="row">
                     <p class="data">
-                        <b>APPLICANT FULL NAME</b><br>
-                        ${data.fullName ?? "N/A"}
+                       <span class="fieldName">APPLICANT FULL NAME</span><br>
+                        <span class="fieldValue"> ${
+                          data.fullName ?? "N/A"
+                        }  </span>
                     </p>
 
                     <p class="data">
-                        <b>PHONE NO.</b><br>
-                        ${data.phone ?? "N/A"}
+                       <span class="fieldName">PHONE NO.</span><br>
+                        <span class="fieldValue"> ${
+                          data.phone ?? "N/A"
+                        }  </span>
                     </p>
                 </div>
                 <div class="separator"></div>
                 <div class="row">
                     <p class="data">
-                        <b>TYPE</b><br>
-                        ${data.applicationType ?? "N/A"}
+                       <span class="fieldName">TYPE</span><br>
+                        <span class="fieldValue"> ${
+                          data.applicationType ?? "N/A"
+                        } </span>
                     </p>
                     <p class="data">
-                        <b>REFERENCE #</b><br>
-                        ${data.reference ?? "N/A"}
+                       <span class="fieldName">REFERENCE #</span><br>
+                        <span class="fieldValue"> ${
+                          data.reference ?? "N/A"
+                        }  </span>
                     </p>
                     <p class="data">
-                        <b>SPECIAL</b><br>
-                        ${data.special ?? "N/A"}
+                       <span class="fieldName">ENTRY</span><br>
+                        <span class="fieldValue"> ${
+                          data.educationalLevel ?? "N/A"
+                        } </span>
                     </p>
                     <p class="data">
-                        <b>STATUS</b><br>
-                        ${data.status ?? "N/A"}
+                       <span class="fieldName">STATUS</span><br>
+                        <span class="fieldValue"> ${
+                          data.status ?? "N/A"
+                        }  </span>
                     </p>
                 </div>
             </div>

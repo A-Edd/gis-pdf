@@ -2,20 +2,22 @@ const buildOtherCert = data => `
 <div class="section">
 <div class="row">
     <p class="data">
-        <b>INSTITUTION NAME</b><br>
-        ${data.otherInstitution}
+       <span class="fieldName">INSTITUTION NAME</span><br>
+        <span class="fieldValue"> ${data.otherInstitution}</span>
     </p>
     <p class="data">
-        <b>REF. NUMBER</b><br>
-        ${data.referenceNumber}
+       <span class="fieldName">REF. NUMBER</span><br>
+        <span class="fieldValue"> ${data.referenceNumber}</span>
     </p>
     <p class="data">
-        <b>PROGRAM/CERTIFICATION</b><br>
-        ${data.course}
+       <span class="fieldName">PROGRAM/CERTIFICATION</span><br>
+        <span class="fieldValue"> ${data.course} </span>
     </p>
     <p class="data">
-        <b>DURATION</b><br>
-        ${data.durationNumber} ${data.durationType}
+       <span class="fieldName">DURATION</span><br>
+        <span class="fieldValue"> ${
+          data.durationNumber ?? ""
+        } <span class="fieldValue"> ${data.durationType ?? ""} </span>
     </p>
 </div>
 </div>

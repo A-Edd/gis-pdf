@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/A-Edd/gis-pdf#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "html-pdf-node": "^1.0.7"
   }
 }
