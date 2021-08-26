@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const html_to_pdf = require("html-pdf-node");
 const fs = require("fs");
-const { buildTemplate, buildComponents } = require("./utils");
+const { buildComponents, buildTemplate } = require("./utils");
 
 const app = express();
 
@@ -13,8 +13,12 @@ app.post("/", (req, res) => {
   let data = req.body;
   let options = { format: "A4" };
   let html = fs.readFileSync("./template.html", { encoding: "utf-8" });
+  let render = buildTemplate(html, buildComponents(data));
+  let file = { content: render };
 
-  let file = { content: buildTemplate(html, buildComponents(data)) };
+  // console.log("app", file);
+
+  fs.writeFileSync("./data.html", render, { encoding: "utf-8" });
 
   html_to_pdf.generatePdf(file, options).then(pdfBuffer => {
     fs.writeFileSync(`${data.referenceNumber}.pdf`, pdfBuffer);
