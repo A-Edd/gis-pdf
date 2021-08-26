@@ -1,0 +1,22 @@
+{
+  "name": "gis-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-Edd/gis-pdf.git"
+  },
+  "author": "A-E",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/A-Edd/gis-pdf/issues"
+  },
+  "homepage": "https://github.com/A-Edd/gis-pdf#readme",
+  "dependencies": {
+    "html-pdf-node": "^1.0.7"
+  }
+}
